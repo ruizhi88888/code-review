@@ -24,11 +24,8 @@ jobs:
           distribution: 'adopt'
           java-version: '11'
           
-      - name: Run Java Code
-        run: 
-          cd deepseek-code-review-sdk/src/main/java
-          javac org/dbappsecurity/sdk/DeepSeekCodeReview.java
-          java org.dbappsecurity.sdk.DeepSeekCodeReview
+      - name: Run Java code
+        run: cd deepseek-code-review-sdk/src/main/java && javac org/dbappsecurity/sdk/DeepSeekCodeReview.java && java org.dbappsecurity.sdk.DeepSeekCodeReview
           
       # - name: Create libs directory
       #   run: mkdir -p ./libs
