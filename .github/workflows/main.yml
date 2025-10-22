@@ -25,9 +25,6 @@ jobs:
           java-version: '11'
 
       - name: Run Java code
-        run: 
-          cd deepseek-code-review-sdk/src/main/java 
-          javac org/dbappsecurity/sdk/DeepSeekCodeReview.java
-          java org.dbappsecurity.sdk.DeepSeekCodeReview
+        run: cd deepseek-code-review-sdk/src/main/java && javac org/dbappsecurity/sdk/DeepSeekCodeReview.java && java org.dbappsecurity.sdk.DeepSeekCodeReview
 
   
