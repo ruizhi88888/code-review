@@ -3,10 +3,10 @@ name: DeepSeekCodeReview
 on:
   push:
     branches:
-      - '*'
+      - close
   pull_request:
     branches:
-      - '*'
+      - close
 
 jobs:
   build:
